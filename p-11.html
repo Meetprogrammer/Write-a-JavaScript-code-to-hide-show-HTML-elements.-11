@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hide/Show HTML Elements</title>
+	<script>
+		function toggleVisibility(){
+			var x = document.getElementById("myPara");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>Hide/Show HTML Elements</h2>
+	<p id="myPara">This is a paragraph</p>
+	<br><br>
+	<button onclick="toggleVisibility()">Toggle Visibility</button>
+</body>
+</html>
